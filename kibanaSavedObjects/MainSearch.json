@@ -1,0 +1,22 @@
+[
+  {
+    "_id": "32ba1d60-6505-11e8-841f-a7f901a962c7",
+    "_type": "search",
+    "_source": {
+      "title": "Main search",
+      "description": "",
+      "hits": 0,
+      "columns": [
+        "_source"
+      ],
+      "sort": [
+        "@timestamp",
+        "desc"
+      ],
+      "version": 1,
+      "kibanaSavedObjectMeta": {
+        "searchSourceJSON": "{\"index\":\"b3ed1fa0-64ff-11e8-841f-a7f901a962c7\",\"highlightAll\":true,\"version\":true,\"query\":{\"language\":\"lucene\",\"query\":\"\"},\"filter\":[{\"meta\":{\"index\":\"b3ed1fa0-64ff-11e8-841f-a7f901a962c7\",\"negate\":false,\"disabled\":false,\"alias\":null,\"type\":\"range\",\"key\":\"@timestamp\",\"value\":\"January 1st 2015, 00:00:00.000 to Infinity\",\"params\":{\"gte\":\"2015-01-01\"}},\"range\":{\"@timestamp\":{\"gte\":\"2015-01-01\"}},\"$state\":{\"store\":\"appState\"}},{\"meta\":{\"index\":\"b3ed1fa0-64ff-11e8-841f-a7f901a962c7\",\"type\":\"phrases\",\"key\":\"ActionGeo_CountryCode\",\"value\":\"NZ, IND, USA, GBR, CAN\",\"params\":[\"NZ\",\"IND\",\"USA\",\"GBR\",\"CAN\"],\"negate\":false,\"disabled\":false,\"alias\":null},\"query\":{\"bool\":{\"should\":[{\"match_phrase\":{\"ActionGeo_CountryCode\":\"NZ\"}},{\"match_phrase\":{\"ActionGeo_CountryCode\":\"IND\"}},{\"match_phrase\":{\"ActionGeo_CountryCode\":\"USA\"}},{\"match_phrase\":{\"ActionGeo_CountryCode\":\"GBR\"}},{\"match_phrase\":{\"ActionGeo_CountryCode\":\"CAN\"}}],\"minimum_should_match\":1}},\"$state\":{\"store\":\"appState\"}}]}"
+      }
+    }
+  }
+]
